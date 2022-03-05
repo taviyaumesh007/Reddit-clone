@@ -3,29 +3,145 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="icon" type="image/x-icon" href="https://www.redditinc.com/assets/images/site/reddit-logo.png">
-    
-    <title>Reddit Clone</title>
-    
+
+    <link rel="icon" type="image/x-icon"
+        href="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-reddit-circle-512.png">
+
+    <title>Reddit</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="assets/fontawesome-free-6.0.0-web/fontawesome-free-6.0.0-web/css/all.css">
+
+
 </head>
+
 <body>
+
     <header>
-        <ul  class="grid-1">
-            <li><strong> Sub Reddit</strong></li>
-            <li>-</li>
-            <li>Home</li>
-            <li>-</li>
-            <li>All</li>
-            <li>-</li>
-            <li>Random</li>
-            <li>-</li>
-            <li>User</li>
+
+        <ul class="grid-1">
+            <li><strong> My Subreddit</strong></li>
+            <li> - </li>
+            <li> Home </li>
+            <li> - </li>
+            <li> All </li>
+            <li> - </li>
+            <li> Random </li>
+            <li> - </li>
+            <li> Users </li>
         </ul>
+
     </header>
+
+    <nav class="grid-3">
+
+        <img src="./reddit.png" alt="REDDIT" class="reddit-pic">
+
+        <div>
+            <ul>
+                <li>Hot</li>
+                <li>New</li>
+                <li>Rising</li>
+                <li>Wiki</li>
+                <li>Top</li>
+            </ul>
+        </div>
+
+        <div class="user-profile">
+            <div>
+                <ul>
+                    <li>idevangsharma</li>
+                    <li>(4500)</li>
+                    <li><strong>Preferences</strong></li>
+                    <li>Logout</li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <div id="main" class="main-class">
+
+        <div class="post">
+
+            <div class="post-upvotes">
+
+                <div class='arrow-up' onclick='upvote()' <i class="fa-solid fa-thumbs-up"></i>>
+                </div>
+
+                <div id='votes'>1000</div>
+
+                <div class='arrow-down' onclick='downvote()'>
+                    <i class="fa-solid fa-thumbs-down"></i>>
+                </div>
+
+            </div>
+
+            <div class="post-body">
+                <a href="'#" class="post-title"> Make a Reddict Clone</a>
+                <p> Submitted 3 Hours Ago by <a class='submit-link' href='#'> idevangsharma </a> to <a
+                        class='submit-link' href='#'>/r/redditclones</a></p>
+
+                <div class="post-options">
+                    <span> Comments </span>
+                    <span> Shares </span>
+                    <span> Save </span>
+                    <span> Hide </span>
+                    <span> Report </span>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <div class="search-container">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa-solid fa-search"></i></button>
+
+            <button class='user-action-button'>
+                Submit a New Link
+            </button>
+
+
+            <button class='user-action-button'>
+                Submit a New Text Post
+            </button>
+
+
+            <button class='user-action-button'>
+                Create Your Own Sub-Reddit
+            </button>
+
+
+            <div class="reddit-gold">
+                <div> Daily Reddit Gold Goal</div>
+
+                <div>
+                    <div class="bar-container">
+                        <div class="bar"></div>
+                    </div>
+
+                    <span class="gold-percent"> 75% </span>
+                </div>
+
+                <button class="reddit-gold-support"> help support reddit</button>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
 </body>
+
 </html>
